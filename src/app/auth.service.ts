@@ -16,7 +16,7 @@ export class AuthService {
   }
 
   login(): void {
-    window.open('/oauth2/authorization/keycloak', '_self');
+    window.open('/oauth2/authorization/polarBookShop', '_self');
   }
 
   logout(): Observable<any> {
