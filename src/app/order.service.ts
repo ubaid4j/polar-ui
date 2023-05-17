@@ -17,11 +17,11 @@ export class OrderService {
   constructor(private httpClient: HttpClient) { }
 
   getOrders(): Observable<Order[]> {
-    return this.httpClient.get<Order[]>('/orders');
+    return this.httpClient.get<Order[]>('/api/orders');
   }
 
   submitOrder(orderRequest: OrderRequest): Observable<any> {
-    return this.httpClient.post<any>(`/orders`,
+    return this.httpClient.post<any>(`/api/orders`,
       orderRequest,
       httpOptions
     );
